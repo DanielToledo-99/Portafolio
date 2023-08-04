@@ -1,0 +1,71 @@
+.about-summary__header,
+.about-hobbies__header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-summary__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
+  gap: 2rem;
+}
+
+.about-summary__card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2rem 1fr;
+  grid-template-rows: 2.25rem 1fr;
+}
+
+.about-summary__card-icon {
+  fill: var(--success);
+}
+
+.about-summary__card-title {
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+
+.about-summary__card-body {
+  font-size: 1.125em;
+  line-height: 1.75rem;
+  font-weight: 300;
+  grid-column-start: 2;
+}
+
+.about-hobbies {
+  background-color: var(--background-dark);
+}
+
+.about-hobbies__content {
+  display: grid;
+  /* Se rompe en 768 con mas de 229 */
+  grid-template-columns: repeat(auto-fill, minmax(min(237px, 100%), 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.about-hobbies__food {
+  padding: 0.5rem 0.5rem;
+}
+
+.about-hobbies__travel {
+  padding: 0.5rem 0.5rem;
+}
+
+.about-hobbies__image {
+  max-height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  /* object-position: 50% 50%; */
+}
+
+.about-hobbies__image--top {
+  object-position: 0% 0%;
+}
+
+.about-hobbies__paragraph {
+  text-align: center;
+  padding: 0.625rem 0.5rem;
+}

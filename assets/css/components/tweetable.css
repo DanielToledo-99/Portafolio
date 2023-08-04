@@ -1,0 +1,77 @@
+.tweetable-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tweetable-summary__background-icon {
+  display: grid;
+  place-items: center;
+}
+
+.tweetable-summary__content {
+  max-width: 480px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.tweetable-summary__content-body {
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.tweetable-image-img {
+  max-width: 480px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.tweetable-features_header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tweetable-features__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(305px, 100%), 1fr));
+  gap: 2rem;
+}
+
+.tweetable-features__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tweetable-summary__background-icon {
+  width: 2.5rem;
+  max-height: 2.5rem;
+  padding: 0.5rem 0;
+  background-color: var(--background-lighter);
+  border-radius: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.tweetable-icon-ruby {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--red-600);
+}
+
+.tweetable-icon-postgresql {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--light-blue-600);
+}
+
+.tweetable-icon-github {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--gray-900);
+}

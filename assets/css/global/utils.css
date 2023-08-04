@@ -1,0 +1,85 @@
+/* Atomic CSS */
+.w-full {
+  width: 100%;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.overline {
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.pt-2 {
+  padding-top: 0.625rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-primary-dark {
+  color: var(--primary-dark);
+}
+
+.bg-color-background-darker {
+  background-color: var(--background-darker);
+}
+
+.bg-color-background-dark {
+  background-color: var(--background-dark);
+}
+
+.color-black {
+  color: var(--black);
+}
+
+.position-relative {
+  position: relative;
+}

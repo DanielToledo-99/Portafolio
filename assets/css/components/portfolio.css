@@ -1,0 +1,90 @@
+.portfolio-summary__header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.portfolio-summary__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
+  gap: 2rem;
+}
+
+.portfolio-summary-card {
+  background-color: var(--background-light);
+  padding: 1.5rem;
+  position: relative;
+  border-radius: 0.25rem;
+}
+
+.portfolio-summary-card__link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.portfolio-summary__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.portfolio-summary__icons {
+  display: flex;
+  justify-content: space-between;
+  max-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-summary__icon-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.portfolio-summary-card__icon-link {
+  width: 1.5rem;
+  max-height: 1.5rem;
+  position: relative;
+}
+
+.portfolio-summary__background-icon {
+  width: 2.5rem;
+  max-height: 2.5rem;
+  padding: 0.5rem 0;
+  background-color: var(--background-lighter);
+  border-radius: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.portfolio-summary-card__content {
+  margin-top: 1rem;
+}
+
+.portfolio-summary-card__content-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.portfolio-summary-card__content-tag {
+  border-radius: 0.625rem;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75em;
+  line-height: 1.125rem;
+}
+
+.portfolio-summary-ruby {
+  fill: var(--red-600);
+}
+
+.portfolio-summary-postgresql {
+  fill: var(--light-blue-600);
+}
+
+.portfolio-summary-github {
+  fill: var(--gray-900);
+}

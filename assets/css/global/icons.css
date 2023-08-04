@@ -1,0 +1,65 @@
+.svg-icon {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+}
+
+.svg-icon--default {
+  fill: var(--fill);
+  stroke: var(--stroke);
+}
+
+.svg-icon--default:hover {
+  fill: var(--fill-dark);
+  stroke: var(--stroke-dark);
+}
+
+.svg-icon--default:active {
+  fill: var(--fill-darker);
+  stroke: var(--stroke-darker);
+}
+
+.svg-icon--default:focus {
+  outline: 0.1875rem solid var(--info);
+  outline-offset: 0.0625rem;
+}
+
+.svg-icon--primary {
+  fill: var(--primary);
+  stroke: var(--primary);
+}
+
+.svg-icon--primary:hover {
+  fill: var(--primary-dark);
+  stroke: var(--primary-dark);
+}
+
+.svg-icon--primary:active {
+  fill: var(--primary-darker);
+  stroke: var(--primary-darker);
+}
+
+.svg-icon--primary:focus {
+  outline: 0.1875rem solid var(--info);
+  outline-offset: 0.0625rem;
+}
+
+.svg-icon--primary-light {
+  fill: var(--primary-light);
+  stroke: var(--primary-light);
+}
+
+.svg-icon--primary-light:hover {
+  fill: var(--primary);
+  stroke: var(--primary);
+}
+
+.svg-icon--primary-light:active {
+  fill: var(--primary-dark);
+  stroke: var(--primary-dark);
+}
+
+.svg-icon--primary-light:focus {
+  outline: 0.1875rem solid var(--info);
+  outline-offset: 0.0625rem;
+}

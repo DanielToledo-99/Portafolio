@@ -1,0 +1,32 @@
+.contact-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-header__content {
+  margin-top: 0.25rem;
+}
+
+.contact-form {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-form__input {
+  width: 304px;
+}
+
+.contact-form__checkbox {
+  width: 100%;
+}
+
+@media only screen and (max-width: 430px) {
+  .contact-form__input,
+  .contact-form__checkbox {
+    width: 343px;
+  }
+}

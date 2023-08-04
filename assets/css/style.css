@@ -1,0 +1,11 @@
+@import url("global.css");
+
+@import url("components/header.css");
+@import url("components/footer.css");
+@import url("components/home-page.css");
+@import url("components/portfolio.css");
+@import url("components/about.css");
+@import url("components/tweetable.css");
+@import url("components/calencli.css");
+@import url("components/pokemon-ruby.css");
+@import url("components/clin-boards.css");

@@ -1,0 +1,92 @@
+.calencli-summary,
+.calencli-features__content,
+.calencli-team__members,
+.calencli-summary__background-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.calencli-summary__content {
+  max-width: 460px;
+}
+
+.calencli-summary__content p {
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.calencli-summary__content a {
+  max-width: 270px;
+}
+
+.calencli-image {
+  max-width: 500px;
+}
+
+.calencli-image img {
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.calencli-features_header,
+.calencli-team__header {
+  margin-bottom: 3rem;
+}
+
+.calencli-features__section {
+  max-width: 300px;
+}
+
+.calencli-summary__background-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--background);
+}
+
+.calencli-summary__background-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.calencli-team__member {
+  max-width: 300px;
+}
+
+.calencli-social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.calencli-social-links svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.calencli-member-name {
+  margin-top: 1rem;
+  margin-bottom: 0.5625rem;
+}
+
+.calencli-avatar {
+  height: 256px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .calencli-team__header,
+  .calencli-features_header {
+    text-align: center;
+  }
+
+  .calencli-summary__content {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

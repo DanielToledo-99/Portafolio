@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Toledo | Contact Me</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-lg">
+        <nav class="navbar">
+          <input type="checkbox" id="menu-mobile" />
+          <div class="navbar__logo-container">
+            <a href="/index.html" class="navbar__logo heading-md semibold">
+              <span>Daniel Toledo</span>
+            </a>
+            <label for="menu-mobile" class="toggle-checkbox">
+              <span class="toggle-checkbox__first_line"></span>
+              <span class="toggle-checkbox__second_line"></span>
+              <span class="toggle-checkbox__last_line"></span>
+            </label>
+          </div>
+
+          <ul class="navbar__links">
+            <!-- <li>
+              <a href="article.html" class="link text-md semibold">Articles</a>
+            </li> -->
+            <li>
+              <a href="portfolio.html" class="link text-md semibold">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="link text-md semibold">About</a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/kevinronu/"
+                class="button button--primary button--sm ml-4"
+              >
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section-md">
+      <div class="container-lg">
+        <header class="contact-header">
+          <h2 class="heading-lg semibold">Contact Me</h2>
+          <p class="contact-header__content">
+            Looking to expand your team? Or do you need a web developer for a
+            specific project? If I can help you in any way don't hesitate to
+            fill this form.
+          </p>
+        </header>
+        <div class="container-sm contact-form">
+          <label class="overline text-xs light contact-form__input">
+            First Name
+            <input
+              class="input"
+              type="text"
+              name="first-name"
+              placeholder="John"
+            />
+          </label>
+
+          <label class="overline text-xs light contact-form__input">
+            Last Name
+            <input
+              class="input"
+              type="text"
+              name="last-name"
+              placeholder="Doe"
+            />
+          </label>
+
+          <label class="overline text-xs light contact-form__input">
+            Email
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="john@mail.com"
+            />
+          </label>
+
+          <label class="overline text-xs light contact-form__input">
+            Company
+            <input
+              class="input"
+              type="text"
+              name="company"
+              placeholder="Company SA"
+            />
+          </label>
+
+          <label class="overline text-xs light contact-form__input">
+            Phone
+            <input
+              class="input"
+              type="tel"
+              name="phone"
+              placeholder="+51987654321"
+            />
+          </label>
+
+          <label class="overline text-xs light contact-form__input">
+            Country
+            <select class="select text-md w-full">
+              <option selected disabled hidden>Select one option</option>
+              <option value="1">Perú</option>
+              <option value="2">Bolivia</option>
+              <option value="3">Chile</option>
+              <option value="4">USA</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+
+          <div class="contact-form__checkbox">
+            <p class="text-xs light overline">How can I help you?</p>
+            <div class="checkbox-group checkbox-group--vertical">
+              <div class="checkbox">
+                <input
+                  id="checkbox_1"
+                  name="checkbox_group_1"
+                  type="checkbox"
+                  class="checkbox__input"
+                />
+                <div>
+                  <label for="checkbox_1" class="text-sm light">
+                    Job Offer
+                  </label>
+                  <span class="checkbox__message">
+                    If you are looking to expand your team
+                  </span>
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <input
+                  id="checkbox_2"
+                  name="checkbox_group_1"
+                  type="checkbox"
+                  class="checkbox__input"
+                />
+                <div>
+                  <label for="checkbox_2" class="text-sm light">
+                    Project Offer
+                  </label>
+                  <span class="checkbox__message">
+                    If you are looking to expand your team
+                  </span>
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <input
+                  id="checkbox_3"
+                  name="checkbox_group_1"
+                  type="checkbox"
+                  class="checkbox__input"
+                />
+                <div>
+                  <label for="checkbox_3" class="text-sm light">
+                    Collaboration
+                  </label>
+                  <span class="checkbox__message">
+                    If you are looking to expand your team
+                  </span>
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <input
+                  id="checkbox_4"
+                  name="checkbox_group_1"
+                  type="checkbox"
+                  class="checkbox__input"
+                />
+                <div>
+                  <label for="checkbox_4" class="text-sm light">Other</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="button button--primary button--lg w-full">Send</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

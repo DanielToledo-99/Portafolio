@@ -1,0 +1,126 @@
+.header {
+  background-color: var(--background-darker);
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+
+.navbar__logo-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar__logo {
+  flex-grow: 1;
+  color: var(--text);
+}
+
+.navbar__links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar__links .link {
+  text-decoration: none;
+  color: var(--primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.navbar__links .link:hover {
+  color: var(--primary-dark);
+}
+
+.navbar__links .link:focus {
+  outline: 0.125rem solid var(--primary);
+  outline-offset: 1px;
+}
+
+#menu-mobile,
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-checkbox {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  gap: 0.5rem;
+}
+
+.toggle-checkbox__first_line,
+.toggle-checkbox__second_line,
+.toggle-checkbox__last_line {
+  background: currentColor;
+  height: 0.25rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  transition: 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+@media only screen and (max-width: 540px) {
+  .header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .toggle-checkbox {
+    display: flex;
+  }
+
+  .navbar__links {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+
+  .navbar__links li:last-child {
+    width: 100%;
+  }
+
+  .navbar__links li:last-child a {
+    margin: 0;
+  }
+
+  #menu-mobile:checked ~ .navbar__links {
+    display: flex;
+  }
+
+  .navbar__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu-mobile:checked ~ * .toggle-checkbox__first_line {
+    transform: rotate(-45deg) scaleX(1.05);
+  }
+
+  #menu-mobile:checked ~ * .toggle-checkbox__second_line {
+    opacity: 0;
+  }
+
+  #menu-mobile:checked ~ * .toggle-checkbox__last_line {
+    transform: rotate(45deg) scaleX(1.05);
+  }
+}
