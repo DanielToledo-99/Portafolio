@@ -9,3 +9,344 @@
 @import url("components/calencli.css");
 @import url("components/pokemon-ruby.css");
 @import url("components/clin-boards.css");
+
+/* =========================================
+   EXPERIENCE TIMELINE — Professional & Dynamic
+   ========================================= */
+
+.about-hobbies {
+  position: relative;
+  padding: 60px 20px;
+  background: #0a0a0a;
+}
+
+.about-hobbies__header {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.about-hobbies__header h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 8px;
+}
+
+.about-hobbies__header p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Contenedor principal */
+.about-hobbies__content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Card base con efectos mejorados */
+.experience-card {
+  position: relative;
+  display: grid !important;
+  grid-template-columns: minmax(280px, 380px) 1fr;
+  gap: 16px 40px;
+  width: 100% !important;
+  padding: 32px 36px;
+  margin: 0 !important;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transform: translateY(0);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Animación de entrada */
+  opacity: 0;
+  animation: slideInUp 0.6s ease forwards;
+}
+
+/* Delay progresivo para cada card */
+.experience-card:nth-child(1) { animation-delay: 0.1s; }
+.experience-card:nth-child(2) { animation-delay: 0.2s; }
+.experience-card:nth-child(3) { animation-delay: 0.3s; }
+.experience-card:nth-child(4) { animation-delay: 0.4s; }
+.experience-card:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Timeline vertical line */
+.experience-card::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  bottom: 20px;
+  width: 3px;
+  background: linear-gradient(
+    180deg,
+    rgba(96, 165, 250, 0.6) 0%,
+    rgba(139, 92, 246, 0.4) 50%,
+    rgba(96, 165, 250, 0.2) 100%
+  );
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.4);
+  transition: all 0.4s ease;
+}
+
+/* Timeline dot */
+.experience-card::after {
+  content: "";
+  position: absolute;
+  left: 31px;
+  top: 36px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #60a5fa 0%, #8b5cf6 100%);
+  box-shadow: 
+    0 0 0 8px rgba(96, 165, 250, 0.1),
+    0 0 20px rgba(96, 165, 250, 0.5),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+/* Título del rol */
+.experience-card__title {
+  grid-column: 1;
+  margin: 0 !important;
+  padding-left: 64px;
+  font-size: clamp(1.25rem, 2vw, 1.5rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.03em;
+  text-align: left !important;
+  word-break: normal !important;
+  overflow-wrap: anywhere;
+  background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.85) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+/* Contenedor derecho */
+.experience-card__content {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Descripción principal */
+.experience-card__description {
+  margin: 0 !important;
+  line-height: 1.7 !important;
+  font-size: 1rem !important;
+  text-align: left !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  transition: color 0.3s ease;
+}
+
+/* Lista de logros/responsabilidades */
+.experience-card__list {
+  margin: 12px 0 0 !important;
+  padding-left: 0 !important;
+  text-align: left !important;
+  list-style: none !important;
+  line-height: 1.8;
+}
+
+.experience-card__list li {
+  position: relative;
+  margin: 10px 0;
+  padding-left: 28px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+/* Custom bullet con check */
+.experience-card__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #60a5fa;
+  background: rgba(96, 165, 250, 0.15);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Links */
+.experience-card__link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #60a5fa !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(96, 165, 250, 0.3);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.experience-card__link:hover {
+  color: #93c5fd !important;
+  border-bottom-color: #93c5fd;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+/* ===== HOVER EFFECTS ===== */
+.experience-card:hover {
+  border-color: rgba(96, 165, 250, 0.3);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  box-shadow: 
+    0 12px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(96, 165, 250, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.experience-card:hover::before {
+  background: linear-gradient(
+    180deg,
+    rgba(96, 165, 250, 0.8) 0%,
+    rgba(139, 92, 246, 0.6) 50%,
+    rgba(96, 165, 250, 0.4) 100%
+  );
+  box-shadow: 0 0 30px rgba(96, 165, 250, 0.6);
+}
+
+.experience-card:hover::after {
+  transform: scale(1.15);
+  box-shadow: 
+    0 0 0 10px rgba(96, 165, 250, 0.15),
+    0 0 30px rgba(96, 165, 250, 0.7),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4);
+}
+
+.experience-card:hover .experience-card__title {
+  background: linear-gradient(135deg, #fff 0%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.experience-card:hover .experience-card__description {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.experience-card:hover .experience-card__list li {
+  color: rgba(255, 255, 255, 0.9);
+  transform: translateX(4px);
+}
+
+.experience-card:hover .experience-card__list li::before {
+  background: rgba(96, 165, 250, 0.25);
+  border-color: rgba(96, 165, 250, 0.5);
+  color: #93c5fd;
+  transform: scale(1.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .about-hobbies {
+    padding: 40px 16px;
+  }
+
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 24px 20px;
+  }
+
+  .experience-card::before {
+    left: 20px;
+  }
+
+  .experience-card::after {
+    left: 11px;
+    top: 28px;
+  }
+
+  .experience-card__title {
+    padding-left: 44px;
+    font-size: 1.2rem !important;
+    grid-column: 1;
+  }
+
+  .experience-card__content {
+    grid-column: 1;
+    padding-left: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hobbies__content {
+    gap: 20px !important;
+  }
+
+  .experience-card {
+    padding: 20px 16px;
+  }
+
+  .experience-card__title {
+    font-size: 1.1rem !important;
+    padding-left: 40px;
+  }
+
+  .experience-card__description {
+    font-size: 0.95rem !important;
+  }
+
+  .experience-card__list li {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== ACCESIBILIDAD ===== */
+.experience-card:focus-within {
+  outline: 2px solid rgba(96, 165, 250, 0.5);
+  outline-offset: 4px;
+}
+
+/* Reducir animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+  .experience-card {
+    animation: none;
+    transition: none;
+  }
+
+  .experience-card * {
+    transition: none;
+  }
+}

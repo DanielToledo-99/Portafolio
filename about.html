@@ -7,6 +7,7 @@
     <title>Daniel Toledo | About Me</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container-lg">
@@ -16,7 +17,8 @@
             <a href="/index.html" class="navbar__logo heading-md semibold">
               <span>Daniel Toledo</span>
             </a>
-            <label for="menu-mobile" class="toggle-checkbox">
+
+            <label for="menu-mobile" class="toggle-checkbox" aria-label="Open menu">
               <span class="toggle-checkbox__first_line"></span>
               <span class="toggle-checkbox__second_line"></span>
               <span class="toggle-checkbox__last_line"></span>
@@ -24,185 +26,264 @@
           </div>
 
           <ul class="navbar__links">
-            <!-- <li>
-              <a href="article.html" class="link text-md semibold">Articles</a>
-            </li> -->
             <li>
-              <a href="portfolio.html" class="link text-md semibold">
-                Portfolio
-              </a>
+              <a href="portfolio.html" class="link text-md semibold">Portfolio</a>
             </li>
             <li>
               <a href="about.html" class="link text-md semibold">About</a>
             </li>
             <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
-                class="button button--primary button--sm ml-4"
-              >
-                Contact Me
-              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/" class="button button--primary button--sm ml-4">Contact Me</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- ===== HERO / INTRO ===== -->
     <section class="section-padding-md bg-color-background-dark">
       <div class="container-lg">
         <h2 class="heading-xl regular">
-          Hi! I’m <span class="semibold color-primary">Daniel Toledo</span>, full
-          stack developer looking for new adventures
+          Hi! I'm <span class="semibold color-primary">Daniel Andree Toledo</span>,
+          a <span class="semibold">Full-Stack Web Developer</span> building ERP & scalable web systems
         </h2>
+
         <p class="text-xl light pt-4">
-          As a web developer, I bring a passion for coding and a strong
-          foundation in web development technologies such as HTML, CSS, and
-          JavaScript. I am dedicated to creating responsive, user-friendly
-          websites that meet the needs of clients and users alike. With a keen
-          eye for detail and a commitment to continuous learning, I am excited
-          to contribute my skills and creativity to a dynamic team.
+          Full-stack developer with experience delivering real business solutions: ERP migrations,
+          e-commerce integrations, and data-driven systems. I work with React + TypeScript on the
+          frontend and Node.js / Laravel / Java (Spring) on the backend, with strong MySQL foundations.
+          I care about clean architecture, performance, and shipping reliably.
         </p>
+
+        <div class="pt-4" style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="button button--primary button--sm text-decoration-none" href="portfolio.html">
+            View Portfolio
+          </a>
+
+          
+            class="button button--secondary button--sm text-decoration-none"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
+          >
+            LinkedIn
+          </a>
+
+          
+            class="button button--secondary button--sm text-decoration-none"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </section>
 
+    <!-- ===== SKILLS ===== -->
     <main class="section-md about-summary">
       <div class="container-lg">
         <div class="about-summary__header">
           <h2 class="heading-lg semibold">My Skills</h2>
+          <p class="text-md light pt-2">
+            A practical stack focused on scalable products, clean architecture and maintainable code.
+          </p>
         </div>
+
         <div class="about-summary__content">
+          <!-- Frontend -->
           <div class="about-summary__card">
-            <svg class="about-summary__card-icon">
-              <use xlink:href="#check" />
-            </svg>
-            <h3 class="about-summary__card-title">Ruby</h3>
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">Frontend</h3>
             <p class="about-summary__card-body">
-              As an web developer, I have a strong proficiency in Ruby, a
-              dynamic, object-oriented programming language that I use to build
-              robust and scalable web applications.
+              React, TypeScript, JavaScript, HTML, CSS. Component-driven UI, responsive layouts,
+              and clean integration with REST APIs.
             </p>
           </div>
+
+          <!-- Backend -->
           <div class="about-summary__card">
-            <svg class="about-summary__card-icon">
-              <use xlink:href="#check" />
-            </svg>
-            <h3 class="about-summary__card-title">Ruby on Rails</h3>
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">Backend</h3>
             <p class="about-summary__card-body">
-              In addition to my expertise in Ruby, I also have extensive
-              experience using Ruby on Rails, a powerful web application
-              framework that enables me to rapidly build and deploy high-quality
-              web applications
+              Node.js, PHP (Laravel), Java (Spring Boot / Spring WebFlux) and .NET. Building APIs,
+              business logic, and integrations.
             </p>
           </div>
+
+          <!-- Databases -->
           <div class="about-summary__card">
-            <svg class="about-summary__card-icon">
-              <use xlink:href="#check" />
-            </svg>
-            <h3 class="about-summary__card-title">Javascript</h3>
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">Databases</h3>
             <p class="about-summary__card-body">
-              As a well-rounded web developer, I also have a strong proficiency
-              in JavaScript, a versatile and dynamic programming language that I
-              use to build dynamic and interactive web applications.
+              Strong MySQL experience (performance, integrity, security). Additional experience with
+              PostgreSQL, SQL Server and MongoDB.
             </p>
           </div>
+
+          <!-- Architecture -->
           <div class="about-summary__card">
-            <svg class="about-summary__card-icon">
-              <use xlink:href="#check" />
-            </svg>
-            <h3 class="about-summary__card-title">React</h3>
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">Architecture</h3>
             <p class="about-summary__card-body">
-              I have a solid understanding of React, a popular JavaScript
-              library that enables me to build efficient and scalable user
-              interfaces for web application.
+              Microservices, scalability and decoupling. Clean / Hexagonal Architecture (Ports & Adapters)
+              for maintainability and testability.
             </p>
           </div>
+
+          <!-- DevOps / Cloud -->
           <div class="about-summary__card">
-            <svg class="about-summary__card-icon">
-              <use xlink:href="#check" />
-            </svg>
-            <h3 class="about-summary__card-title">Git & Github</h3>
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">DevOps & Cloud</h3>
             <p class="about-summary__card-body">
-              As a web developer, I have a strong proficiency in using Git and
-              GitHub for version control and collaboration, which allows me to
-              work efficiently and effectively with other developers on
-              projects.
+              Docker for consistent environments (dev/testing/deploy) and deployments/operations on AWS.
+              Git & GitHub for version control.
             </p>
           </div>
+
+          <!-- Work style -->
           <div class="about-summary__card">
-            <svg class="about-summary__card-icon">
-              <use xlink:href="#check" />
-            </svg>
-            <h3 class="about-summary__card-title">Postgresql</h3>
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">Workflow</h3>
             <p class="about-summary__card-body">
-              I have extensive experience with PostgresSQL, a powerful
-              open-source relational database management system that I use to
-              build and maintain scalable and robust databases for web
-              applications.
+              Agile/Scrum, documentation, and collaboration with stakeholders. Focused on delivering value,
+              iteration and quality.
             </p>
           </div>
         </div>
       </div>
     </main>
 
-    <main class="section-padding-md about-hobbies">
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="about-hobbies">
       <div class="container-lg">
         <div class="about-hobbies__header">
-          <h2 class="heading-lg semibold">My Hobbies</h2>
+          <h2 class="heading-lg semibold">Experience</h2>
+          <p class="text-md light pt-2">
+            Recent roles and projects delivering ERP, e-commerce and automation solutions.
+          </p>
         </div>
-        <div class="about-hobbies__content">
-          <div>
-            <img
-              class="about-hobbies__image"
-              src="assets/images/travel.jpg"
-              alt="some food!"
-            />
-          </div>
-          <div class="about-hobbies__food">
-            <h3 class="heading-md semibold">Research</h3>
-            <p class="text-xl light pt-2">
 
-              I am a naturally curious person, always seeking to learn and discover new things. The thirst for knowledge and the desire to understand the workings of the world around me drive me. 🧐
-            </p>
-          </div>
-          <div>
-            <img
-              class="about-hobbies__image"
-              src="assets/images/soccer.jpg"
-              alt="some food!"
-            />
-          </div>
-          <div class="about-hobbies__travel">
-            <h3 class="heading-md semibold">Travel</h3>
-            <p class="text-xl light pt-2">
-              I enjoy traveling because it allows me to explore new places, cultures, and experiences. The thrill of visiting unfamiliar destinations, trying different cuisines, and meeting people from diverse backgrounds fills me with excitement and curiosity.  ✈️
-            </p>
-          </div>
-          <div>
-            <img
-              class="about-hobbies__image"
-              src="assets/images/research.jpg"
-              alt="machu picchu"
-            />
-          </div>
-          <div>
-            <div class="about-hobbies__travel">
-              <h3 class="heading-md semibold">Soccer</h3>
-              <p class="text-xl light pt-2">
-                I am passionate about football and enjoy every moment I spend around this beautiful sport. Football has also taught me valuable lessons about teamwork, perseverance, and resilience. I have learned to celebrate successes and face challenges with determination and a competitive spirit.⚽️
+        <div class="about-hobbies__content">
+          <!-- Card 1 -->
+          <div class="experience-card">
+            <h3 class="experience-card__title">Grupo QTC — Analista Programador (2025)</h3>
+            <div class="experience-card__content">
+              <p class="experience-card__description">
+                E-commerce solutions (Honor, Xiaomi, Tecstore, DJI). MySQL, microservices, Java, React, AWS & Docker.
               </p>
+              <ul class="experience-card__list">
+                <li>Optimized and administered MySQL ensuring performance and availability.</li>
+                <li>Designed microservice-based architecture for scalability and decoupling.</li>
+                <li>Developed reactive services with Spring WebFlux + MySQL.</li>
+                <li>Applied Hexagonal Architecture (Ports & Adapters).</li>
+                <li>Used Docker and deployed/operated in AWS.</li>
+              </ul>
             </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="experience-card">
+            <h3 class="experience-card__title">Pierre's Pizza S.A.C — Full Stack Developer (2023–2024)</h3>
+            <div class="experience-card__content">
+              <ul class="experience-card__list">
+                <li>Migrated ERP: backend from PHP to Node.js and frontend from Angular to React + TypeScript.</li>
+                <li>Planned tasks and coordinated delivery with a multidisciplinary team.</li>
+                <li>Maintained and optimized MySQL with data integrity and security practices.</li>
+                <li>Integrated POS and e-invoicing using Laravel + queues (SUNAT flow).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="experience-card">
+            <h3 class="experience-card__title">Ladrillera El Diamante — Systems Analyst (2024–2025)</h3>
+            <div class="experience-card__content">
+              <ul class="experience-card__list">
+                <li>Maintained and optimized MySQL and business processes integrated with Excel.</li>
+                <li>Developed modules using PHP, Laravel, JavaScript and HTML.</li>
+                <li>Worked with relational and non-relational DBs: MongoDB, PostgreSQL, SQL Server, MySQL.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="experience-card">
+            <h3 class="experience-card__title">Licorerías Unidas — Freelance (2025)</h3>
+            <div class="experience-card__content">
+              <ul class="experience-card__list">
+                <li>Built a complete web system for "El Peruano Más Ronero" contest (3 months).</li>
+                <li>Laravel + MySQL, SQL optimization, documentation and functional testing.</li>
+                <li>Deployed and operated the solution on AWS.</li>
+              </ul>
+              <a class="experience-card__link" target="_blank" rel="noopener noreferrer" href="https://licoreriasunidas.com.pe/calculadora/">
+                View Project →
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="experience-card">
+            <h3 class="experience-card__title">Editora Multimedios — Web Developer (2020)</h3>
+            <div class="experience-card__content">
+              <ul class="experience-card__list">
+                <li>Designed and developed a PHP + MySQL system for sales guide tracking.</li>
+                <li>Implemented authentication, roles and CRUD flows.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION & CERTIFICATIONS ===== -->
+    <main class="section-md about-summary">
+      <div class="container-lg">
+        <div class="about-summary__header">
+          <h2 class="heading-lg semibold">Education & Certifications</h2>
+        </div>
+
+        <div class="about-summary__content">
+          <div class="about-summary__card">
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">Codeable (2023)</h3>
+            <p class="about-summary__card-body">
+              Intensive full-time full-stack web development program (6 months).
+            </p>
+          </div>
+
+          <div class="about-summary__card">
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">Tecsup (2018–2022)</h3>
+            <p class="about-summary__card-body">
+              Graduate — Software Design and Development.
+            </p>
+          </div>
+
+          <div class="about-summary__card">
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">Certifications</h3>
+            <p class="about-summary__card-body">
+              Machine Learning (Udemy, 2020) · Cloud Computing & Mobile Apps (Google Actívate, 2020)
+            </p>
+          </div>
+
+          <div class="about-summary__card">
+            <svg class="about-summary__card-icon"><use xlink:href="#check" /></svg>
+            <h3 class="about-summary__card-title">Languages</h3>
+            <p class="about-summary__card-body">Spanish (native) · English (intermediate)</p>
+          </div>
         </div>
       </div>
     </main>
 
     <footer class="footer">
       <div class="container-lg footer__content">
-        <h2 class="heading-xl semibold footer__content__title">
-          Can I help you?
-        </h2>
-        <a
+        <h2 class="heading-xl semibold footer__content__title">Can I help you?</h2>
+        
           target="_blank"
+          rel="noopener noreferrer"
           href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
           class="button button--primary button--lg text-lg text-decoration-none"
         >
@@ -211,6 +292,7 @@
       </div>
     </footer>
 
+    <!-- ===== ICONS ===== -->
     <div hidden>
       <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="check" viewBox="0 0 26 26">
