@@ -2,92 +2,812 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Toledo | Blog</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Daniel Toledo — Fullstack Developer</title>
+    <meta name="description" content="Daniel Toledo — Fullstack Developer specializing in ERP systems, CRM platforms, and scalable web applications. React, Next.js, TypeScript, Ruby on Rails, PostgreSQL, AWS." />
+    <meta name="author" content="Daniel Toledo" />
+
+    <!-- Open Graph -->
+    <meta property="og:title"       content="Daniel Toledo — Fullstack Developer" />
+    <meta property="og:description" content="Building ERP systems, CRM platforms, and scalable web applications end-to-end." />
+    <meta property="og:type"        content="website" />
+
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
     />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    /> -->
+
+    <link rel="stylesheet" href="assets/css/premium.css" />
   </head>
+
   <body>
-    <header class="header">
-      <div class="container-lg">
-        <nav class="navbar">
-          <input type="checkbox" id="menu-mobile" />
-          <div class="navbar__logo-container">
-            <a href="/index.html" class="navbar__logo heading-md semibold">
-              <span>Daniel Toledo</span>
+
+    <!-- ═══════════════════════════════════════
+         NAVBAR
+    ═══════════════════════════════════════ -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo" aria-label="Daniel Toledo — Home">
+          Daniel Toledo<span class="nav__logo-dot">.</span>
+        </a>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#about"      class="nav__link">About</a></li>
+          <li><a href="#stack"      class="nav__link">Stack</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#projects"   class="nav__link">Projects</a></li>
+          <li><a href="#services"   class="nav__link">Services</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav__cta"
+            >
+              Contact
             </a>
-            <label for="menu-mobile" class="toggle-checkbox">
-              <span class="toggle-checkbox__first_line"></span>
-              <span class="toggle-checkbox__second_line"></span>
-              <span class="toggle-checkbox__last_line"></span>
-            </label>
+          </li>
+        </ul>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section class="hero" id="home" aria-label="Hero">
+
+      <div class="hero__bg">
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__badges" aria-hidden="true">
+        <div class="hero__badge hero__badge--1">React</div>
+        <div class="hero__badge hero__badge--2">TypeScript</div>
+        <div class="hero__badge hero__badge--3">Next.js</div>
+        <div class="hero__badge hero__badge--4">PostgreSQL</div>
+      </div>
+
+      <div class="hero__inner">
+
+        <!-- Content -->
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Open to new opportunities
           </div>
 
-          <ul class="navbar__links">
-            <!-- <li>
-              <a href="article.html" class="link text-md semibold">Articles</a>
-            </li> -->
-            <li>
-              <a href="portfolio.html" class="link text-md semibold">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="about.html" class="link text-md semibold">About</a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
-                class="button button--primary button--sm ml-4"
-              >
-                Contact Me
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+          <h1 class="hero__title">
+            Fullstack Developer<br />
+            <span class="hero__title-line2">that ships systems</span><br />
+            that work.
+          </h1>
 
-    <main class="section-md">
-      <div class="container-lg presentation-container">
-        <div class="presentation-container__info">
-          <h2 class="heading-lg regular">
-            Hi! I’m <span class="semibold color-primary">Daniel Toledo</span>,
-            Systems and IT Engineer, looking for new adventures as a full stack
-            web developer
+          <p class="hero__description">
+            I design and build scalable ERP platforms, CRM systems, and web
+            applications from database architecture to polished interfaces.
+            Precision engineering meets real business impact.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              View Projects
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--ghost"
+            >
+              Let's talk
+            </a>
+          </div>
+
+          <div class="hero__stats" role="list">
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-number">5+</span>
+              <span class="hero__stat-label">Years building</span>
+            </div>
+            <div class="hero__stat-sep" aria-hidden="true"></div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-number">10+</span>
+              <span class="hero__stat-label">Systems delivered</span>
+            </div>
+            <div class="hero__stat-sep" aria-hidden="true"></div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-number">Full</span>
+              <span class="hero__stat-label">Stack coverage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="hero__visual">
+          <div class="hero__img-frame">
+            <img
+              src="assets/images/perfil.png"
+              alt="Daniel Toledo — Fullstack Developer"
+              class="hero__img"
+              loading="eager"
+              width="380"
+              height="400"
+            />
+            <div class="hero__img-glow" aria-hidden="true"></div>
+
+            <!-- Status card -->
+            <div class="hero__img-card" aria-label="Availability status">
+              <div class="hero__img-card-label">Status</div>
+              <div class="hero__img-card-value">
+                <span class="hero__img-card-dot" aria-hidden="true"></span>Available now
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about">
+
+          <!-- Text side -->
+          <div>
+            <div class="section-tag reveal">About me</div>
+            <h2 class="section-title reveal">
+              Engineered for<br />
+              <span class="accent">complex systems.</span>
+            </h2>
+            <p class="about__text reveal">
+              I'm Daniel Toledo, a Systems and IT Engineer turned fullstack developer
+              with a track record of building robust platforms that get used in
+              production. From multi-module ERP systems to real-time dashboards,
+              I work across the full stack with precision and care.
+            </p>
+            <p class="about__text reveal">
+              My background in systems engineering gives me a unique lens —
+              I don't just build features, I design solutions. I care deeply about
+              code architecture, developer experience, and interfaces that feel
+              like real products, not prototypes.
+            </p>
+
+            <div class="about__pills reveal">
+              <div class="about__pill">
+                <span class="about__pill-icon" aria-hidden="true">⚙</span>
+                Systems Architecture
+              </div>
+              <div class="about__pill">
+                <span class="about__pill-icon" aria-hidden="true">⚡</span>
+                Performance-first
+              </div>
+              <div class="about__pill">
+                <span class="about__pill-icon" aria-hidden="true">◈</span>
+                UX-driven development
+              </div>
+              <div class="about__pill">
+                <span class="about__pill-icon" aria-hidden="true">▲</span>
+                End-to-end delivery
+              </div>
+            </div>
+          </div>
+
+          <!-- Code card -->
+          <div class="reveal">
+            <div class="about__card" role="img" aria-label="Developer profile as JSON">
+              <div class="about__card-bar">
+                <div class="about__card-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="about__card-filename">profile.json</span>
+              </div>
+              <div class="about__card-body">
+                <pre class="about__code"><span class="c-arr">{</span>
+  <span class="c-key">"name"</span>:     <span class="c-str">"Daniel Toledo"</span>,
+  <span class="c-key">"role"</span>:     <span class="c-str">"Fullstack Developer"</span>,
+  <span class="c-key">"location"</span>: <span class="c-str">"Peru / Remote"</span>,
+  <span class="c-key">"focus"</span>: <span class="c-arr">[</span>
+    <span class="c-str">"ERP &amp; CRM systems"</span>,
+    <span class="c-str">"Web platforms"</span>,
+    <span class="c-str">"API architecture"</span>,
+    <span class="c-str">"UX engineering"</span>
+  <span class="c-arr">]</span>,
+  <span class="c-key">"stack"</span>: <span class="c-arr">{</span>
+    <span class="c-key">"frontend"</span>: <span class="c-arr">[</span><span class="c-str">"React"</span>, <span class="c-str">"Next.js"</span>, <span class="c-str">"TypeScript"</span><span class="c-arr">]</span>,
+    <span class="c-key">"backend"</span>:  <span class="c-arr">[</span><span class="c-str">"Rails"</span>, <span class="c-str">"Node.js"</span><span class="c-arr">]</span>,
+    <span class="c-key">"db"</span>:       <span class="c-arr">[</span><span class="c-str">"PostgreSQL"</span>, <span class="c-str">"MySQL"</span><span class="c-arr">]</span>,
+    <span class="c-key">"cloud"</span>:    <span class="c-arr">[</span><span class="c-str">"AWS"</span><span class="c-arr">]</span>
+  <span class="c-arr">}</span>,
+  <span class="c-key">"available"</span>: <span class="c-bool">true</span>
+<span class="c-arr">}</span></pre>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         STACK / SKILLS
+    ═══════════════════════════════════════ -->
+    <section class="section section--alt" id="stack">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag reveal">Tech Stack</div>
+          <h2 class="section-title reveal">Tools I build with.</h2>
+          <p class="section-subtitle reveal">
+            Production-tested across multiple projects and real-world environments.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+
+          <div class="stack-cat reveal">
+            <div class="stack-cat__label">Frontend</div>
+            <div class="stack-cat__skills">
+              <div class="skill-item">React</div>
+              <div class="skill-item">Next.js</div>
+              <div class="skill-item">TypeScript</div>
+              <div class="skill-item">JavaScript (ES2022+)</div>
+              <div class="skill-item">HTML5 / CSS3</div>
+              <div class="skill-item">Vite</div>
+            </div>
+          </div>
+
+          <div class="stack-cat reveal">
+            <div class="stack-cat__label">Backend</div>
+            <div class="stack-cat__skills">
+              <div class="skill-item">Node.js</div>
+              <div class="skill-item">Java · Spring Boot</div>
+              <div class="skill-item">.NET</div>
+              <div class="skill-item">Ruby on Rails</div>
+              <div class="skill-item">Laravel / PHP</div>
+              <div class="skill-item">REST APIs · Microservices</div>
+            </div>
+          </div>
+
+          <div class="stack-cat reveal">
+            <div class="stack-cat__label">Database</div>
+            <div class="stack-cat__skills">
+              <div class="skill-item">PostgreSQL</div>
+              <div class="skill-item">MySQL</div>
+              <div class="skill-item">MongoDB</div>
+              <div class="skill-item">SQL Server</div>
+              <div class="skill-item">Odoo (ERP)</div>
+            </div>
+          </div>
+
+          <div class="stack-cat reveal">
+            <div class="stack-cat__label">DevOps &amp; Tools</div>
+            <div class="stack-cat__skills">
+              <div class="skill-item">Docker</div>
+              <div class="skill-item">AWS</div>
+              <div class="skill-item">Git / GitHub</div>
+              <div class="skill-item">CI/CD</div>
+              <div class="skill-item">Scrum / Agile</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         EXPERIENCE
+    ═══════════════════════════════════════ -->
+    <section class="section" id="experience">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag reveal">Experience</div>
+          <h2 class="section-title reveal">Where I've built things.</h2>
+          <p class="section-subtitle reveal">
+            5+ años construyendo sistemas reales en empresas de distintos sectores.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Management 360° -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__company">Management 360°</h3>
+                  <p class="timeline-card__role">Analista Desarrollador</p>
+                </div>
+                <div class="timeline-card__meta">
+                  <span class="timeline-card__date">2025</span>
+                  <span class="timeline-card__location">Lima, Perú</span>
+                </div>
+              </div>
+              <p class="timeline-card__summary">
+                Consultoría tecnológica para organizaciones a nivel nacional. Diseño e implementación de microservicios
+                backend con Java 17 y Spring Boot bajo arquitectura hexagonal, integración de servicios REST,
+                administración de bases de datos MySQL y despliegue en AWS.
+              </p>
+              <div class="timeline-card__tags">
+                <span class="tl-tag">Java 17</span>
+                <span class="tl-tag">Spring Boot</span>
+                <span class="tl-tag">Hexagonal Arch</span>
+                <span class="tl-tag">MySQL</span>
+                <span class="tl-tag">AWS</span>
+                <span class="tl-tag">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grupo QTC -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__company">Grupo QTC</h3>
+                  <p class="timeline-card__role">Analista Programador</p>
+                </div>
+                <div class="timeline-card__meta">
+                  <span class="timeline-card__date">2025</span>
+                  <span class="timeline-card__location">Lima, Perú</span>
+                </div>
+              </div>
+              <p class="timeline-card__summary">
+                Plataformas de e-commerce para las marcas Honor, Xiaomi, Tecstore y DJI. Arquitectura de microservicios
+                con Java y programación reactiva (Spring WebFlux), containerización con Docker, frontend con React,
+                backend con PHP/Magento y operación en AWS.
+              </p>
+              <div class="timeline-card__tags">
+                <span class="tl-tag">Java</span>
+                <span class="tl-tag">Spring WebFlux</span>
+                <span class="tl-tag">React</span>
+                <span class="tl-tag">Docker</span>
+                <span class="tl-tag">PHP · Magento</span>
+                <span class="tl-tag">AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Licorerías Unidas -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__company">Licorerías Unidas</h3>
+                  <p class="timeline-card__role">Desarrollador Freelance</p>
+                </div>
+                <div class="timeline-card__meta">
+                  <span class="timeline-card__date">2025</span>
+                  <span class="timeline-card__location">Lima, Perú</span>
+                </div>
+              </div>
+              <p class="timeline-card__summary">
+                Diseño, desarrollo y entrega de sistema web completo para el concurso "El Peruano Más Ronero",
+                incluyendo calculadora interactiva. Backend en Laravel + MySQL, despliegue en AWS, optimización SQL
+                y coordinación directa con el cliente.
+              </p>
+              <div class="timeline-card__tags">
+                <span class="tl-tag">Laravel</span>
+                <span class="tl-tag">PHP</span>
+                <span class="tl-tag">MySQL</span>
+                <span class="tl-tag">AWS</span>
+                <span class="tl-tag">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ladrillera El Diamante -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__company">Ladrillera El Diamante</h3>
+                  <p class="timeline-card__role">Analista de Sistemas de Producción</p>
+                </div>
+                <div class="timeline-card__meta">
+                  <span class="timeline-card__date">2024 – 2025</span>
+                  <span class="timeline-card__location">Arequipa, Perú</span>
+                </div>
+              </div>
+              <p class="timeline-card__summary">
+                Administración del ERP y desarrollo de nuevos módulos para el sistema de control de procesos
+                industriales. Stack: PHP, Laravel, JavaScript. Bases de datos relacionales y no relacionales:
+                MongoDB, PostgreSQL, SQL Server y MySQL. Integración con Excel para reportes actualizables.
+              </p>
+              <div class="timeline-card__tags">
+                <span class="tl-tag">Laravel · PHP</span>
+                <span class="tl-tag">PostgreSQL</span>
+                <span class="tl-tag">MongoDB</span>
+                <span class="tl-tag">SQL Server</span>
+                <span class="tl-tag">ERP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pierre's Pizza -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__company">Pierre's Pizza S.A.C</h3>
+                  <p class="timeline-card__role">Desarrollador Full Stack</p>
+                </div>
+                <div class="timeline-card__meta">
+                  <span class="timeline-card__date">2023 – 2024</span>
+                  <span class="timeline-card__location">Lima, Perú</span>
+                </div>
+              </div>
+              <p class="timeline-card__summary">
+                Lideré la migración del ERP de PHP a Node.js y de Angular a React con TypeScript, coordinando un equipo
+                multidisciplinario. Integré el punto de venta con facturación electrónica (SUNAT) usando Laravel con sistema
+                de colas. Administración y optimización de base de datos MySQL.
+              </p>
+              <div class="timeline-card__tags">
+                <span class="tl-tag">Node.js</span>
+                <span class="tl-tag">React · TypeScript</span>
+                <span class="tl-tag">Laravel</span>
+                <span class="tl-tag">MySQL</span>
+                <span class="tl-tag">ERP Migration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Presto Italo Peruana -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__company">Presto Italo Peruana</h3>
+                  <p class="timeline-card__role">Desarrollador Freelance</p>
+                </div>
+                <div class="timeline-card__meta">
+                  <span class="timeline-card__date">2024</span>
+                  <span class="timeline-card__location">Arequipa, Perú</span>
+                </div>
+              </div>
+              <p class="timeline-card__summary">
+                Diseño y desarrollo de la primera versión del sistema ERP de la empresa, orientado a la gestión
+                operativa. Implementado en .NET con buenas prácticas, administración de MySQL,
+                optimización de consultas y extracción de indicadores de productividad por área.
+              </p>
+              <div class="timeline-card__tags">
+                <span class="tl-tag">.NET</span>
+                <span class="tl-tag">MySQL</span>
+                <span class="tl-tag">ERP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editora Multimedios -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot timeline-dot--last" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__company">Editora Multimedios S.A.C.</h3>
+                  <p class="timeline-card__role">Desarrollador Web</p>
+                </div>
+                <div class="timeline-card__meta">
+                  <span class="timeline-card__date">2020</span>
+                  <span class="timeline-card__location">Arequipa, Perú</span>
+                </div>
+              </div>
+              <p class="timeline-card__summary">
+                Desarrollo de sistema web en PHP + MySQL para optimizar el control y registro de guías de venta.
+                Implementación de login con autenticación de usuarios y roles, CRUD completo para el manejo
+                de guías y diseño de mockups con el equipo.
+              </p>
+              <div class="timeline-card__tags">
+                <span class="tl-tag">PHP</span>
+                <span class="tl-tag">MySQL</span>
+                <span class="tl-tag">Auth · RBAC</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         PROJECTS
+    ═══════════════════════════════════════ -->
+    <section class="section" id="projects">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag reveal">Projects</div>
+          <h2 class="section-title reveal">Systems I've shipped.</h2>
+          <p class="section-subtitle reveal">
+            Real-world platforms built end-to-end — from architecture to deployment.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Featured: ERP -->
+          <article class="project-card project-card--featured reveal">
+            <div class="project-card__meta">
+              <div class="project-card__type">Featured · Enterprise</div>
+            </div>
+            <h3 class="project-card__title">ERP Modernization Suite</h3>
+            <p class="project-card__desc">
+              Full modernization of a legacy ERP system for a mid-size company.
+              Designed and implemented a multi-module architecture with granular role-based
+              access control, real-time dashboards, and a redesigned UX that significantly
+              reduced onboarding friction and operational errors.
+            </p>
+            <div class="project-card__impact">
+              <span class="project-card__badge">↑ Productivity gains</span>
+              <span class="project-card__badge">RBAC security model</span>
+              <span class="project-card__badge">Multi-module architecture</span>
+            </div>
+            <div class="project-card__stack">
+              <span class="stack-pill">Next.js</span>
+              <span class="stack-pill">React</span>
+              <span class="stack-pill">TypeScript</span>
+              <span class="stack-pill">MySQL</span>
+              <span class="stack-pill">RBAC</span>
+            </div>
+          </article>
+
+          <!-- Commerce Dashboard -->
+          <article class="project-card reveal">
+            <div class="project-card__meta">
+              <div class="project-card__type">Dashboard · Analytics</div>
+            </div>
+            <h3 class="project-card__title">Commerce Ops Dashboard</h3>
+            <p class="project-card__desc">
+              Centralized operations platform integrating multiple REST APIs and AWS services.
+              Delivers real-time inventory tracking, sales analytics, and business KPIs
+              through a unified, role-aware interface.
+            </p>
+            <div class="project-card__stack">
+              <span class="stack-pill">Next.js</span>
+              <span class="stack-pill">React</span>
+              <span class="stack-pill">REST APIs</span>
+              <span class="stack-pill">AWS</span>
+              <span class="stack-pill">Analytics</span>
+            </div>
+          </article>
+
+          <!-- Get That Home -->
+          <article class="project-card reveal">
+            <div class="project-card__meta">
+              <div class="project-card__type">Full Stack · SaaS</div>
+            </div>
+            <h3 class="project-card__title">Get That Home</h3>
+            <p class="project-card__desc">
+              End-to-end real estate platform with a React frontend and Ruby on Rails
+              API backend. Features dynamic property listings, advanced multi-criteria
+              filtering, and Google Maps integration for location-based discovery.
+            </p>
+            <div class="project-card__stack">
+              <span class="stack-pill">React</span>
+              <span class="stack-pill">Ruby on Rails</span>
+              <span class="stack-pill">PostgreSQL</span>
+              <span class="stack-pill">Google Maps API</span>
+              <span class="stack-pill">AWS</span>
+            </div>
+          </article>
+
+          <!-- Migration -->
+          <article class="project-card reveal">
+            <div class="project-card__meta">
+              <div class="project-card__type">Architecture · Migration</div>
+            </div>
+            <h3 class="project-card__title">Angular → React Migration</h3>
+            <p class="project-card__desc">
+              Led a systematic migration of a large Angular codebase to React and TypeScript.
+              Defined component architecture patterns, migration playbook, and a reusable
+              design system — ensuring continuity with zero user-facing downtime.
+            </p>
+            <div class="project-card__stack">
+              <span class="stack-pill">React</span>
+              <span class="stack-pill">TypeScript</span>
+              <span class="stack-pill">Design System</span>
+              <span class="stack-pill">Architecture</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         SERVICES
+    ═══════════════════════════════════════ -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag reveal">Services</div>
+          <h2 class="section-title reveal">How I can help.</h2>
+          <p class="section-subtitle reveal">
+            End-to-end development capabilities for product teams, startups, and founders.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card reveal">
+            <div class="service-card__num">01</div>
+            <span class="service-card__icon" aria-hidden="true">⚙</span>
+            <h3 class="service-card__title">Fullstack Development</h3>
+            <p class="service-card__desc">
+              From backend API design to polished frontend UI. I own the full product
+              lifecycle — React, Rails, PostgreSQL, deployed on AWS.
+            </p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__num">02</div>
+            <span class="service-card__icon" aria-hidden="true">◈</span>
+            <h3 class="service-card__title">ERP &amp; CRM Systems</h3>
+            <p class="service-card__desc">
+              Custom administrative platforms with multi-role access, reporting modules,
+              and business process automation built for real workflows.
+            </p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__num">03</div>
+            <span class="service-card__icon" aria-hidden="true">▲</span>
+            <h3 class="service-card__title">Legacy Modernization</h3>
+            <p class="service-card__desc">
+              Systematic migration from outdated stacks to modern architectures —
+              with zero disruption to users or ongoing operations.
+            </p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__num">04</div>
+            <span class="service-card__icon" aria-hidden="true">◎</span>
+            <h3 class="service-card__title">UX/UI Engineering</h3>
+            <p class="service-card__desc">
+              Developer-grade UX improvements: faster flows, accessible components,
+              and interfaces that behave like products — not MVPs.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         CTA
+    ═══════════════════════════════════════ -->
+    <section class="cta-wrap" id="contact">
+      <div class="cta-wrap__bg" aria-hidden="true">
+        <div class="cta-wrap__grid"></div>
+        <div class="cta-wrap__orb"></div>
+      </div>
+
+      <div class="container">
+        <div class="cta-inner">
+          <div class="section-tag reveal">Let's work together</div>
+
+          <h2 class="cta-title reveal">
+            Ready to build something<br />
+            <span class="accent">worth shipping?</span>
           </h2>
-        </div>
-        <div class="presentation-container__slider">
-          <img src="assets/images/perfil.png"></img>
+
+          <p class="cta-subtitle reveal">
+            Open to fullstack roles, freelance projects, and technical collaborations.
+            Let's talk about what you're building.
+          </p>
+
+          <div class="cta-actions reveal">
+            <a
+              href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary btn--lg"
+            >
+              Connect on LinkedIn
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="contact.html" class="btn btn--ghost btn--lg">
+              Send a message
+            </a>
+          </div>
         </div>
       </div>
-    </main>
+    </section>
 
-    <footer class="footer">
-      <div class="container-lg footer__content">
-        <h2 class="heading-xl semibold footer__content__title">
-          Can I help you?
-        </h2>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
-          class="button button--primary button--lg text-lg"
-        >
-          Get in touch
-        </a>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+
+        <div class="footer__row">
+          <div class="footer__brand">
+            <div>
+              <span class="footer__logo-text">Daniel Toledo</span><span class="footer__logo-dot">.</span>
+            </div>
+            <p class="footer__tagline">Fullstack Developer · Systems Engineer</p>
+          </div>
+
+          <nav aria-label="Footer navigation">
+            <ul class="footer__nav">
+              <li><a href="#about"    class="footer__nav-link">About</a></li>
+              <li><a href="#stack"    class="footer__nav-link">Stack</a></li>
+              <li><a href="#projects" class="footer__nav-link">Projects</a></li>
+              <li><a href="#services" class="footer__nav-link">Services</a></li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__nav-link"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__bottom">
+          <span class="footer__copy">© 2025 Daniel Toledo. Built with precision.</span>
+          <div class="footer__social">
+            <a
+              href="https://www.linkedin.com/in/daniel-andree-toledo-navarrete/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social-link"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/DanielToledo-99"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social-link"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
       </div>
     </footer>
+
+    <script src="assets/js/premium.js"></script>
   </body>
 </html>
